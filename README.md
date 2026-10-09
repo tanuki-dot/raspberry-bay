@@ -1,7 +1,7 @@
 # raspberry-bay
 raspberry pi zero 2w living inside a thinkpads t60 ultrabay
 
-The Ultrabay slot where the T60's DVD drive used to live is dead weight on a modern FrankenPad. Raspberry Bay fills it with a Raspberry Pi Zero 2 W running headless Pi OS 64-bit — a second, hidden Linux computer tucked inside the laptop, with its own battery so it runs whether the host is on or off.
+The Ultrabay slot where the T60's DVD drive used to live is dead weight on a modern FrankenPad. Raspberry Bay fills it with a Raspberry Pi Zero 2 W running headless Pi OS 64-bit. a second hidden Linux computer tucked inside the laptop, with its own battery so it runs whether the host is on or off.
 
 What it does
 
