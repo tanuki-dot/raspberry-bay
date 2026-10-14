@@ -1,10 +1,9 @@
 Raspberry Bay Wiring diagram
 
-SW1 (SPDT) breaks the 3.7 V line between the TP4056 and the MT3608, so it
-cuts the whole bay including the Pi. No DIP, no switched target rail. The
+Dip switch breaks the 3.7 V line between the TP4056 and the MT3608, so it
+cuts the whole bay including the Pi.no switched target rail. The
 SOIC clip VCC comes from the Pi 3V3 (pin 17).
 
-Net names
 
 Use these exact names on both ends in KiCad. Matching label is the connection.
 
