@@ -7,7 +7,7 @@ The Ultrabay slot where the T60's DVD drive used to live is dead weight on a mod
 So what it does?
 
 Embedded SPI flashing rig: a breakout on the front bezel exposes the Pi's SPI0 and UART and GPIO, so you clip a SOIC8 onto a chip and flash with flashrom, great for Libreboot/coreboot work and general bus poking.
-DIP switch kills target power of the Pi.
+DIP switch kills targets power.
 
 How it's built?
 <img width="4032" height="3024" alt="Image" src="https://github.com/user-attachments/assets/4323bf2d-97bc-4d09-a57a-0dca265cbb9f" />
