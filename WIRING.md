@@ -1,7 +1,7 @@
 Raspberry Bay Wiring diagram
 
 Dip switch breaks the 3.7 V line between the TP4056 and the MT3608, so it
-cuts the whole bay including the Pi.no switched target rail. The
+cuts the whole bay including the Pi. no switched target rail. The
 SOIC clip VCC comes from the Pi 3V3 (pin 17).
 
 
