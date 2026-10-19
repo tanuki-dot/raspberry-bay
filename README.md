@@ -13,4 +13,4 @@ How it's built?
 <img width="4032" height="3024" alt="Image" src="https://github.com/user-attachments/assets/4323bf2d-97bc-4d09-a57a-0dca265cbb9f" />
 Pi Zero 2 W + 2×20 right-angle header (the header is the bus rail)
 Self-powered: LiPo 803040 to a TP4056 USB-C charger to MT3608 boost to 5V
-Custom 3D-printed caddy + bezel.
+Custom 3D-printed caddy.
