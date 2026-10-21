@@ -12,4 +12,4 @@ Dip switch (2switch ver) / 0.20 eur.
 
 Philips 128gb microSDHC card (or any other) / 25 eur.
 
-The full cost is 50.20 eur.
+The full cost is `50.20 eur`.
