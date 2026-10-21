@@ -1,4 +1,4 @@
-here are the things you will need and how much they will cost:
+# here are the things you will need and how much they will cost:
 
 Raspberry pi zero 2w / cost: 20 eur.
 
