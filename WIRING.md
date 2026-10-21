@@ -1,8 +1,8 @@
-Raspberry Bay Wiring diagram
+# Raspberry Bay Wiring diagram
 
 Dip switch breaks the 3.7 V line between the TP4056 and the MT3608, so it
 cuts the whole bay including the Pi. no switched target rail. The
-SOIC clip VCC comes from the Pi 3V3 (pin 17).
+SOIC clip VCC comes from the Pi 3V3 (`pin 17`).
 
 
 Use these exact names on both ends in KiCad. Matching label is the connection.
@@ -19,7 +19,7 @@ Use these exact names on both ends in KiCad. Matching label is the connection.
 
 Pi Zero 2 W header
 
-Wired pins only (physical pin numbers):
+# Wired pins only (physical pin numbers):
 
 - Pin 2: `+5V`, from MT3608 VOUT+
 - Pin 6: `GND`, from MT3608 VOUT negative
@@ -32,7 +32,7 @@ Wired pins only (physical pin numbers):
 
 Pins 27 through 40 are unused and exposed on the bezel as spare bus rail.
 
-Modules
+# Modules
 
 USB-C: goes to TP4056 IN+ and IN negative (5 V charge in).
 
@@ -45,7 +45,7 @@ position leaves it open.
 MT3608: VIN+ on `SW_OUT`. VIN negative on `GND`. VOUT+ on `+5V`. VOUT
 negative on `GND`.
 
-SOIC8 clip (25-series flash)
+# SOIC8 clip (25-series flash)
 
 - Pin 1 CS#: `SPI_CS`
 - Pin 2 SO: `SPI_MISO`
