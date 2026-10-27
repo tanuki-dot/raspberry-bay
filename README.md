@@ -1,5 +1,10 @@
 # raspberry bay
 raspberry pi zero 2w living inside a thinkpads t60 ultrabay
+![Libreboot](https://img.shields.io/badge/Libreboot-26.01-blue)
+![Machine](https://img.shields.io/badge/ThinkPad-T60-black)
+![GPU](https://img.shields.io/badge/GPU-Intel%20i945-lightgrey)
+![Panel](https://img.shields.io/badge/Panel-14.1%22%20XGA-green)
+![Status](https://img.shields.io/badge/status-working-success)
 
 The Ultrabay slot where the T60's DVD drive used to live is dead weight on a modern FrankenPad. Raspberry Bay fills it with a Raspberry Pi Zero 2 W running headless Pi OS 64-bit. a second hidden Linux computer tucked inside the laptop, with its own battery so it runs whether the host is on or off.
 <img width="4032" height="3024" alt="Image" src="https://github.com/user-attachments/assets/5e5c0b02-1411-4137-895f-5adb5e8694ee" />
