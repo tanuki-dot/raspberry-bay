@@ -1,5 +1,6 @@
 # raspberry bay
 raspberry pi zero 2w living inside a thinkpads t60 ultrabay
+
 ![Libreboot](https://img.shields.io/badge/Libreboot-26.01-blue)
 ![Machine](https://img.shields.io/badge/ThinkPad-T60-black)
 ![GPU](https://img.shields.io/badge/GPU-Intel%20i945-lightgrey)
