@@ -28,8 +28,6 @@ a raspberry pi zero 2w living inside a thinkpad t60 ultrabay. the slot where the
 5. [pinout and wiring](#5-pinout-and-wiring)
 6. [flashing a chip](#6-flashing-a-chip)
 7. [cost](#7-cost)
-8. [whats in here](#8-whats-in-here)
-9. [links](#9-links)
 
 * * *
 
