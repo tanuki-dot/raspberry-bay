@@ -173,23 +173,3 @@ flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -w new.rom
 
 full breakdown in [`full-cost.md`](full-cost.md).
 
-## 8. whats in here
-
-[#8-whats-in-here](#8-whats-in-here)
-
-| path             | whats in it                            |
-|------------------|----------------------------------------|
-| [`openscad`](openscad)       | source for the 3d printed caddy        |
-| [`schematic`](schematic)     | kicad schematic of power + spi wiring  |
-| [`WIRING.md`](WIRING.md)     | canonical net names and pin by pin     |
-| [`full-cost.md`](full-cost.md) | bom with prices                      |
-| `LICENSE`        | gpl 3.0                                |
-
-## 9. links
-
-[#9-links](#9-links)
-
-- flashrom linux_spi: [https://www.flashrom.org/supported_hw/supported_prog/linux_spi.html](https://www.flashrom.org/supported_hw/supported_prog/linux_spi.html)
-- pi zero 2w pinout: [https://pinout.xyz](https://pinout.xyz)
-- libreboot external flashing: [https://libreboot.org/docs/install/spi.html](https://libreboot.org/docs/install/spi.html)
-- my t60 libreboot writeup, the host this bay lives in: [https://github.com/tanuki-dot/t60-libreboot](https://github.com/tanuki-dot/t60-libreboot)
