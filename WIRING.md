@@ -1,57 +1,70 @@
-# Raspberry Bay Wiring diagram
+# raspberry bay wiring
 
-Dip switch breaks the 5V line between the TP4056 and the MT3608, so it
-cuts the whole bay including the Pi. no switched target rail. The
-SOIC clip VCC comes from the Pi 3V3 (`pin 17`).
+[#raspberry-bay-wiring](#raspberry-bay-wiring)
 
+canonical wiring for the bay. use the net names below on both ends in kicad, matching label is the connection.
 
-Use these exact names on both ends in KiCad. Matching label is the connection.
+> [!NOTE]
+> sw1 (dip switch) breaks the 5v line between the tp4056 and the mt3608, so it cuts the whole bay including the pi. no switched target rail. the soic clip vcc comes from the pi 3v3 (pin 17).
 
-- `+5V` (5 V): MT3608 VOUT+, Pi pin 2
-- `GND`: all ground pins
-- `VBAT` (3.7 V cell): TP4056 B+, battery positive
-- `TP_OUT` (protected 3.7 to 4.2 V): TP4056 OUT+, SW1 COM
-- `SW_OUT` (switched 3.7 V): SW1, MT3608 VIN+
-- `SPI_MOSI`: Pi pin 19, SOIC pin 5
-- `SPI_MISO`: Pi pin 21, SOIC pin 2
-- `SPI_SCLK`: Pi pin 23, SOIC pin 6
-- `SPI_CS`: Pi pin 24, SOIC pin 1
+* * *
 
-Pi Zero 2 W header
+## net names
 
-# Wired pins only (physical pin numbers):
+[#net-names](#net-names)
 
-- Pin 2: `+5V`, from MT3608 VOUT+
-- Pin 6: `GND`, from MT3608 VOUT negative
-- Pin 17: `+3V3`, feeds SOIC VCC, WP#, HOLD#
-- Pin 19: `SPI_MOSI`, to SOIC pin 5 (SI)
-- Pin 21: `SPI_MISO`, to SOIC pin 2 (SO)
-- Pin 23: `SPI_SCLK`, to SOIC pin 6
-- Pin 24: `SPI_CS` (CE0), to SOIC pin 1
-- Pin 25: `GND`, to SOIC pin 4
+| net        | voltage                | from / to                   |
+|------------|------------------------|-----------------------------|
+| `+5V`      | 5v                     | mt3608 vout+, pi pin 2      |
+| `GND`      | 0v                     | all ground pins             |
+| `VBAT`     | 3.7v cell              | tp4056 b+, battery positive |
+| `TP_OUT`   | 3.7 to 4.2v, protected | tp4056 out+, sw1 com        |
+| `SW_OUT`   | 3.7v, switched         | sw1, mt3608 vin+            |
+| `SPI_MOSI` | 3v3 logic              | pi pin 19, soic pin 5       |
+| `SPI_MISO` | 3v3 logic              | pi pin 21, soic pin 2       |
+| `SPI_SCLK` | 3v3 logic              | pi pin 23, soic pin 6       |
+| `SPI_CS`   | 3v3 logic              | pi pin 24, soic pin 1       |
 
-Pins 27 through 40 are unused and exposed on the bezel as spare bus rail.
+## pi zero 2w header, wired pins only (physical pin numbers)
 
-# Modules
+[#pi-zero-2w-header-wired-pins-only](#pi-zero-2w-header-wired-pins-only)
 
-USB-C: goes to TP4056 IN+ and IN negative (5 V charge in).
+| pin | net            | goes to              |
+|-----|----------------|----------------------|
+| 2   | `+5V`          | from mt3608 vout+    |
+| 6   | `GND`          | from mt3608 vout -   |
+| 17  | `+3V3`         | feeds soic vcc, wp#, hold# |
+| 19  | `SPI_MOSI`     | soic pin 5 (si)      |
+| 21  | `SPI_MISO`     | soic pin 2 (so)      |
+| 23  | `SPI_SCLK`     | soic pin 6           |
+| 24  | `SPI_CS` (ce0) | soic pin 1           |
+| 25  | `GND`          | soic pin 4           |
 
-TP4056: IN from USB-C. B+ and battery positive share `VBAT`. B negative
-and battery negative share `GND`. OUT+ is `TP_OUT`. OUT negative is `GND`.
+pins 27 through 40 are unused and exposed on the bezel as spare bus rail.
 
-SW1 (SPDT, master on/off): COM on `TP_OUT`. ON pole on `SW_OUT`. Off
-position leaves it open.
+## modules
 
-MT3608: VIN+ on `SW_OUT`. VIN negative on `GND`. VOUT+ on `+5V`. VOUT
-negative on `GND`.
+[#modules](#modules)
 
-# SOIC8 clip (25-series flash)
+- usb-c to tp4056 `IN+` and `IN-` (5v charge in).
+- tp4056: in from usb-c. `B+` and battery + share `VBAT`. `B-` and battery - share `GND`. `OUT+` is `TP_OUT`. `OUT-` is `GND`.
+- sw1 (spdt, master on/off): `COM` on `TP_OUT`, on pole on `SW_OUT`, off leaves it open.
+- mt3608: `VIN+` on `SW_OUT`, `VIN-` on `GND`, `VOUT+` on `+5V`, `VOUT-` on `GND`.
 
-- Pin 1 CS#: `SPI_CS`
-- Pin 2 SO: `SPI_MISO`
-- Pin 3 WP#: `+3V3`
-- Pin 4 GND: `GND`
-- Pin 5 SI: `SPI_MOSI`
-- Pin 6 SCLK: `SPI_SCLK`
-- Pin 7 HOLD#: `+3V3`
-- Pin 8 VCC: `+3V3`
+## soic8 clip (25 series flash)
+
+[#soic8-clip-25-series-flash](#soic8-clip-25-series-flash)
+
+| pin | signal | net        |
+|-----|--------|------------|
+| 1   | cs#    | `SPI_CS`   |
+| 2   | so     | `SPI_MISO` |
+| 3   | wp#    | `+3V3`     |
+| 4   | gnd    | `GND`      |
+| 5   | si     | `SPI_MOSI` |
+| 6   | sclk   | `SPI_SCLK` |
+| 7   | hold#  | `+3V3`     |
+| 8   | vcc    | `+3V3`     |
+
+> [!WARNING]
+> keep wp# (pin 3) and hold# (pin 7) tied to vcc. if hold# goes low the chip's miso goes high impedance and it never answers.
