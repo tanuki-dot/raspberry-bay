@@ -6,7 +6,7 @@ a raspberry pi zero 2w living inside a thinkpad t60 ultrabay. the slot where the
 ![host](https://img.shields.io/badge/host-thinkpad%20t60-black)
 ![slot](https://img.shields.io/badge/slot-ultrabay-blue)
 ![os](https://img.shields.io/badge/os-pi%20os%2064bit-green)
-![license](https://img.shields.io/badge/license-gpl%203.0-lightgrey)
+![license](https://img.shields.io/badge/license-GPL%203.0-lightgrey)
 ![status](https://img.shields.io/badge/status-working-success)
 
 > [!NOTE]
