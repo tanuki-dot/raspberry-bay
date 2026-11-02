@@ -13,7 +13,7 @@ a raspberry pi zero 2w living inside a thinkpad t60 ultrabay. the slot where the
 > the whole bay runs off its own lipo, charged over usb-c. one switch (sw1) cuts the lot, pi included. theres no separate target rail, the chip under the clip gets its 3v3 straight from the pi.
 
 > [!CAUTION]
-> theres a lithium cell sitting inside a laptop chassis. use a protected 803040, keep it away from anything that can pinch or short it, and dont leave it charging unattended the first few times. clipping onto other peoples boards is on you, not me. read [section 6](#6-flashing-a-chip) first.
+> theres a lipo cell sitting inside a laptop chassis. use a protected 803040, keep it away from anything that can pinch or short it, and dont leave it charging unattended the first few times. clipping onto other peoples boards is on you, not me. read [section 6](#6-flashing-a-chip) first.
 
 * * *
 
