@@ -65,7 +65,7 @@ the clip's vcc comes off the pi's own 3v3 (pin 17), which also pulls wp# and hol
 - custom 3d printed caddy sized to the ultrabay, sources in [`openscad`](openscad).
 - kicad schematic for the wiring in [`schematic`](schematic).
 
-![raspberry bay internals](https://github.com/user-attachments/assets/4323bf2d-97bc-4d09-a57a-0dca265cbb9f)
+<img width="1200" height="900" alt="Image" src="https://github.com/user-attachments/assets/365b1b1b-20d5-4423-be5f-b73c3f5ccad9" />
 
 ## 4. power
 
